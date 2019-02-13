@@ -10,7 +10,7 @@ const routes: Routes = [
     },
     {
         path: 'login',
-        loadChildren: './login/login.module#LoginModule'
+        loadChildren: '../app/account-management/account-management.module#AccountManagementModule'
     }
 ];
 

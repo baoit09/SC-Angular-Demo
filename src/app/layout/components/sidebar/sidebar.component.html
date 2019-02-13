@@ -5,14 +5,20 @@
         </a>
         <div class="nested-menu">
             <a mat-list-item (click)="addExpandClass('pages')">
-                <mat-icon class="sidenav-icon">add</mat-icon> {{ 'Product Management' | translate }}
+                <mat-icon class="sidenav-icon">add</mat-icon> {{ 'Inventory Management' | translate }}
             </a>
             <ul class="nested submenu" [class.expand]="showMenu === 'pages'">
                 <li>
-                    <a href="javascript:void(0)"><span>{{ 'New Product' | translate }}</span></a>
+                    <a mat-list-item [routerLink]="['/inventorymanagement/product-maintenance']">
+                        <mat-icon class="icon">input</mat-icon>
+                        <span class="label" style="padding-right:20px">{{ 'New Product' | translate }}</span>
+                    </a>                    
                 </li>
                 <li>
-                    <a href="javascript:void(0)"><span>{{ 'Product Inquiry' | translate }}</span></a>
+                    <a mat-list-item [routerLink]="['/inventorymanagement/product-inquiry']">
+                        <mat-icon class="icon">input</mat-icon>
+                        <span class="label" style="padding-right:20px">{{ 'Product Inquriy' | translate }}</span>
+                    </a>
                 </li>                
             </ul>
         </div>
