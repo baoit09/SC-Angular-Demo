@@ -50,7 +50,7 @@
 
     </table> -->
 
-    <table mat-table matSort (matSortChange)="sortData($event)"
+    <table mat-table matSort 
       class="mat-elevation-z8">
 
       <ng-container matColumnDef="productNumber">
@@ -70,14 +70,14 @@
 
       <tr mat-header-row ></tr>
       <tr style="cursor: pointer;" mat-row 
-        (click)="selectProduct(i)"></tr>
+        ></tr>
 
     </table>
 
   </mat-card-content>
-  <mat-card-actions>
+  <!-- <mat-card-actions>
     <mat-paginator [length]="productInquiryViewModel.totalProducts" [showFirstLastButtons]="true"
       [pageSize]="productInquiryViewModel.pageSize" [pageIndex]="productInquiryViewModel.currentPageIndex"
       [pageSizeOptions]="productInquiryViewModel.pageSizeOptions" (page)="onPaginateChange($event)"></mat-paginator>
-  </mat-card-actions>
+  </mat-card-actions> -->
 </mat-card>
