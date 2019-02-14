@@ -6,24 +6,8 @@ import { AccountManagementRoutingModule } from './account-management-routing.mod
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
-import {
-  MatSidenavModule,
-  MatToolbarModule,
-  MatInputModule,
-  MatButtonModule,
-  MatTabsModule,
-  MatSelectModule,
-  MatIconModule,
-  MatListModule,
-  MatSnackBarModule,
-  MatProgressBarModule,
-  MatFormFieldModule,
-  MatCardModule,
-  MatGridListModule,  
-  MatCheckboxModule,
-} from '@angular/material';
+import { MaterialModule } from '../material.module';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [LoginComponent, RegisterComponent],
@@ -31,22 +15,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CommonModule,
     AccountManagementRoutingModule,
     FormsModule,
-    MatTabsModule,
-    MatInputModule,
-    MatButtonModule,
-    MatSelectModule,
-    MatIconModule,
-    MatListModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatSnackBarModule,
-    MatProgressBarModule,
-    MatFormFieldModule,
-    MatCardModule,
-    MatGridListModule,
-    MatCheckboxModule,
-    FlexLayoutModule.withConfig({addFlexToParent: false})    
+    MaterialModule
   ]
 })
 export class AccountManagementModule { }

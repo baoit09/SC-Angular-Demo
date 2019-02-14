@@ -31,5 +31,11 @@
 
     "Inventory Management": "Gestion de l'inventaire",
     "New Product": "Nouveau produit",
-    "Product Inquiry": "Demande de produit"
+    "Product Inquiry": "Demande de produit",
+    "Product Maintenance": "Produit maintenance",
+    "Product Number": "Numéro de produit",
+    "Description":"La description",
+    "Bin Location":"Emplacement du bac",
+    "Unit Price":"Prix unitaire",
+    "Save Product":"Enregistrer le produit"
 }

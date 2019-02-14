@@ -1,3 +1,47 @@
-<p>
-  product-maintenance works!
-</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <h2>{{ 'Product Maintenance' | translate }}</h2>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form>
+      <div>
+        <mat-form-field style="width:300px">
+          <!-- <input matInput name="ProductNumber" value="{{productViewModel.productNumber}}" 
+          [(ngModel)]="productViewModel.productNumber" placeholder="Product Number"> -->
+          <input matInput name="ProductNumber" placeholder="{{'Product Number' | translate}}">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field style="width:300px">
+          <!-- <input matInput name="Description" placeholder="Description" 
+          value="{{productViewModel.description}}" [(ngModel)]="productViewModel.description"> -->
+          <input matInput name="Description" placeholder="{{'Description' | translate}}">
+        </mat-form-field>
+      </div>
+
+    
+      <div>
+        <mat-form-field style="width:300px">
+          <!-- <input matInput name="BinLocation" placeholder="Bin Location" 
+          value="{{productViewModel.binLocation}}" [(ngModel)]="productViewModel.binLocation"> -->
+          <input matInput name="BinLocation" placeholder="{{'Bin Location' | translate}}">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field style="width:300px">
+          <!-- <input matInput name="UnitPrice" placeholder="Unit Price" value="{{productViewModel.unitPrice}}" 
+          [(ngModel)]="productViewModel.unitPrice"> -->
+          <input matInput name="UnitPrice" placeholder="{{'Unit Price' | translate}}" >
+        </mat-form-field>
+      </div>
+
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-flat-button color="primary" (click)="createOrUpdateProduct()">{{'Save Product' | translate}}</button>
+  </mat-card-actions>
+</mat-card>

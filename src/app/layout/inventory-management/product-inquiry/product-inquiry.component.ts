@@ -12,4 +12,27 @@ export class ProductInquiryComponent implements OnInit {
   ngOnInit() {
   }
 
+  private initializeSearch() {
+  }
+
+  private executeSearch() {
+  }
+
+  private productInquirySuccess() {
+  }
+
+  private productInquiryFailed() {
+  }
+
+  public onPaginateChange(event) {
+  }
+
+  public sortData() {    
+  }
+
+  public resetSearch() {    
+  }
+
+  public selectProduct(row) {    
+  }
 }

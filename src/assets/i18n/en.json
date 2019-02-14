@@ -31,5 +31,11 @@
 
     "Inventory Management": "Inventory Management",
     "New Product": "New Product",
-    "Product Inquiry": "Product Inquiry"
+    "Product Inquiry": "Product Inquiry",    
+    "Product Maintenance": "Product Maintenance",
+    "Product Number": "Product Number",
+    "Description":"Description",
+    "Bin Location":"Bin Location",
+    "Unit Price":"Unit Price",
+    "Save Product":"Save Product"
 }

@@ -12,4 +12,9 @@ export class ProductMaintenanceComponent implements OnInit {
   ngOnInit() {
   }
 
+  private getProduct() {}
+
+ 
+  private getProductSuccess() {}
+
 }
